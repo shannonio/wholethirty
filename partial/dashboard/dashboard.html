@@ -1,0 +1,14 @@
+<div class="dashboard" ng-controller="DashboardCtrl">
+  <div class="day day-{{$index+1}}" ng-repeat="(day, dayData) in data track by $index">
+    <h2 class="day-title">{{day}}</h2>
+    <span class="meal {{meal}}" ng-repeat="(meal, mealData) in dayData track by $index">
+      <h3>{{meal}}</h3>
+      <div class="meals" ng-repeat="m in mealData track by $index">
+        <a ng-if="m.href" ng-href="m.href">{{m.title}}</a>
+        <span ng-if="!m.href">{{m.title}}</span>
+        <span class="meal"></span>
+      </div>
+    </span>
+  </div>
+
+</div>

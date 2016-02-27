@@ -1,0 +1,103 @@
+{
+  "monday": {
+    "breakfast": [
+      {
+        "title": "Avocado Breakfast Bake",
+        "href": "http://www.yummly.com/recipe/Avocado-Breakfast-Bake-627945?columns=3&position=16%2F67"
+      },
+      {
+        "title": "Breakfast Salad",
+        "href": "http://www.yummly.com/recipe/Brainy-Breakfast-Salad-for-Kids_-1026229?columns=3&position=24%2F67"
+      }
+    ],
+    "lunch": [{
+      "title": "Vegan Meatballs and Zucchini Noodles",
+      "href": "http://www.yummly.com/recipe/Zucchini-Spaghetti-_Zoodles__-_-Meatballs-643452?columns=3&position=3%2F26"
+    }],
+    "dinner": [{
+      "title": "Healing Chicken Soup",
+      "href": "http://www.yummly.com/recipe/Healing-Chicken-SoupPaleo-_-Whole30-682580"
+    }]
+  },
+  "tuesday": {
+    "breakfast": [{
+        "title": "Mushroom & Bacon Skillet",
+        "href": "http://www.yummly.com/recipe/Mushroom-and-bacon-breakfast-skillet-309085?columns=3&position=23%2F67"
+    }],
+    "lunch": [{
+      "title": "Broccoli Salad",
+      "href": "http://www.yummly.com/recipe/Paleo-Broccoli-Salad-608720?columns=3&position=13%2F76"
+    }],
+    "dinner": [{
+      "title": "Chicken Florentine Spaghetti Squash",
+      "href": "http://www.yummly.com/recipe/Paleo-_-Whole30-1165635"
+    }]
+  },
+  "wednesday": {
+    "breakfast": [{
+      "title": "Scallion Pancakes",
+      "href": "http://www.yummly.com/recipe/Paleo-Scallion-Pancakes-997250?columns=3&position=51%2F76"
+    }],
+    "lunch": [{
+      "title": "Cilantro Lime Ship",
+      "href": "http://www.yummly.com/recipe/Cilantro-Lime-Shrimp-1016834?columns=3&position=5%2F47"
+    }],
+    "dinner": [{
+      "title": "Sheppards Pie",
+      "href": "http://www.yummly.com/recipe/Whole30-Shepherds-Pie-1294478"
+    }]
+  },
+  "thursday": {
+    "breakfast": [{
+      "title": "Breakfast Skillet",
+      "href": "http://www.yummly.com/recipe/Single-Serve-Paleo-Breakfast-Skillet---Crispy-_-Savory-Bacon_-Plantain-_-Kale-1515177?columns=3&position=1%2F67"
+    }],
+    "lunch": [{
+      "title": "Avocado Egg Salad",
+      "href": "http://www.yummly.com/recipe/Avocado-Egg-Salad-1001023?columns=3&position=10%2F64"
+    }],
+    "dinner": [{
+      "title": "Pork Tenderloin",
+      "href": "http://www.yummly.com/recipe/PALEO-PORK-TENDERLOIN-682191?columns=3&position=36%2F49"
+    }]
+  },
+  "friday": {
+    "breakfast": [{
+      "title": "Breakfast Meatballs",
+      "href": "http://www.yummly.com/recipe/Paleo-Breakfast-Meatballs-1342523?columns=3&position=8%2F67"
+    }],
+    "lunch": [{
+      "title": "Pork Tenderloin",
+      "href": "http://www.yummly.com/recipe/PALEO-PORK-TENDERLOIN-682191?columns=3&position=36%2F49"
+    }],
+    "dinner": [{
+      "title": "Smoky Grilled Pineapple Burgers",
+      "href": "http://www.yummly.com/recipe/Paleo-Smoky-Grilled-Pineapple-Burgers-1232034?columns=3&position=16%2F49"
+    }]
+  },
+  "saturday": {
+    "breakfast": [{
+      "title": "Breakfast Bowl",
+      "href": "http://www.yummly.com/recipe/Paleo-Breakfast-Bowl-1240441?columns=3&position=6%2F67"
+    }],
+    "lunch": [{
+      "title": "Turkey Hash",
+      "href": "http://www.yummly.com/recipe/Paleo-turkey-hash-345367?columns=3&position=24%2F49"
+    }],
+    "dinner": [{
+      "title": "Ribeye's",
+      "href": "http://www.yummly.com/recipe/Ribeye-Marinade-1305112?columns=3&position=1%2F6"
+    }]
+  },
+  "sunday": {
+    "breakfast": [{
+      "title": "Paleo Almond Pancakes",
+      "href": "http://www.yummly.com/recipe/Paleo-Almond-pancakes-_-quick-blueberry-compote-597143?columns=3&position=34%2F76"
+    }],
+    "lunch": [{"title":"LEFTOVERS"}],
+    "dinner": [{
+      "title": "Leg of Lamb",
+      "href": "http://www.yummly.com/recipe/Roast-Boneless-Leg-of-Lamb-with-Rosemary-and-Lemon-1431118?columns=1&position=4%2F4"
+    }]
+  }
+}

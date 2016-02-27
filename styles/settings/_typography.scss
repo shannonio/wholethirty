@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,200,600,900);
+
+html, body, div, p, a, button, input {
+  font-family: 'Raleway', sans;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+a {
+  color: $royal;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: opacity .218s linear;
+
+  &:hover {
+    opacity: .2;
+  }
+}

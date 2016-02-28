@@ -4,7 +4,7 @@
     <span class="meal {{meal}}" ng-repeat="(meal, mealData) in dayData track by $index">
       <h3>{{meal}}</h3>
       <div class="meals" ng-repeat="m in mealData track by $index">
-        <a ng-if="m.href" ng-href="m.href">{{m.title}}</a>
+        <a ng-if="m.href" ng-href="{{m.href}}">{{m.title}}</a>
         <span ng-if="!m.href">{{m.title}}</span>
         <span class="meal"></span>
       </div>

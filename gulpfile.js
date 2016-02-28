@@ -27,7 +27,8 @@ var MAIN_STYLE_SRC = 'app.scss';
 
 var JS_SRC = ['partial/**/*.js', 'directive/**/*.js', 'service/**/*.js', 'filter/**/*.js'];
 var STYLE_SRC = [MAIN_STYLE_SRC, 'partial/**/*.scss', 'directive/**/*.scss', 'styles/**/*.scss'];
-var TMPL_SRC = ['partial/**/*.html', 'directive/**/*.html', 'service/**/*.html', 'filter/**/*.html'];
+// var TMPL_SRC = ['partial/**/*.html', 'directive/**/*.html', 'service/**/*.html', 'filter/**/*.html'];
+var TMPL_SRC = ['partial/**/*.html'];
 var DIST_DEST = 'dist/';
 
 /**
@@ -90,7 +91,7 @@ gulp.task('css', function() {
         .pipe(sassGlob())
         .pipe(sass())
         .pipe(cssmin({keepSpecialComments: 0}))
-        .pipe(rename('webapp.full.css'))
+        .pipe(rename('app.css'))
         .pipe(gulp.dest(DIST_DEST+'css'));
 });
 
@@ -104,7 +105,8 @@ gulp.task('js', function() {
           preserveLineBreaks: true
         }))
         .pipe(ngHtml2js({
-            moduleName: packagejson.name
+            moduleName: packagejson.name,
+            prefix: 'partial/'
         }));
 
     var jsStream = domSrc({file:'index.html',selector:'script[data-build!="exclude"]',attribute:'src'});
@@ -115,7 +117,7 @@ gulp.task('js', function() {
     combined.queue(templateStream);
 
     return combined.done()
-        .pipe(concat('webapp.full.js'))
+        .pipe(concat('app.full.js'))
         .pipe(ngmin())
         .pipe(uglify())
         .pipe(gulp.dest(DIST_DEST+'js'));
@@ -125,10 +127,10 @@ gulp.task('indexHtml', function() {
     return gulp.src('index.html')
         .pipe(dom({
             'css': {
-              src: '/css/webapp.full.css',
+              src: '/css/app.css',
               tpl: '<link rel="stylesheet" href="%s" />'
             },
-            'js': '/js/webapp.full.js'
+            'js': '/js/app.full.js'
         }))
         .pipe(htmlmin({
           removeComments: true,
@@ -139,12 +141,17 @@ gulp.task('indexHtml', function() {
         .pipe(gulp.dest(DIST_DEST));
 });
 
+gulp.task('copy', function() {
+    return gulp.src('plannedmeals.json')
+        .pipe(gulp.dest(DIST_DEST));
+});
+
 gulp.task('images', function(){
     return gulp.src('img/**')
         .pipe(imagemin())
         .pipe(gulp.dest(DIST_DEST+'img'));
 });
 
-gulp.task('build', ['test', ''])
+gulp.task('build', ['test', 'css', 'js', 'indexHtml', 'copy'])
 
 gulp.task('default', ['test', 'jshint', 'serve', 'watch']);
